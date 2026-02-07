@@ -1,0 +1,93 @@
+body {
+  background: #0b1020;
+  color: #e9f7ff;
+  font-family: system-ui, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: #6ee7ff;
+  margin-top: 20px;
+}
+
+#game-container {
+  position: relative;
+  width: 400px;
+  height: 500px;
+  margin: 20px auto;
+  border: 2px solid #6ee7ff;
+  background: radial-gradient(circle at top, #203060, #050814);
+  overflow: hidden;
+}
+
+#lanes {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+}
+
+.lane {
+  flex: 1;
+  border-top: 1px solid #6ee7ff;
+  border-right: 1px solid #1b2a4d;
+  padding: 10px 0;
+  font-size: 20px;
+  color: #9be8ff;
+}
+
+.lane:last-child {
+  border-right: none;
+}
+
+#hit-line {
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #6ee7ff;
+  box-shadow: 0 0 10px #6ee7ff;
+}
+
+.note {
+  position: absolute;
+  width: 25%;
+  height: 25px;
+  border-radius: 6px;
+  background: #00ffd5;
+  box-shadow: 0 0 10px #00ffd5;
+  text-align: center;
+  line-height: 25px;
+  font-size: 14px;
+  color: #021018;
+}
+
+#info {
+  margin-top: 10px;
+}
+
+#start-btn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background: #6ee7ff;
+  color: #021018;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#start-btn:hover {
+  background: #9be8ff;
+}
+
+/* Optional Miku image styling */
+/*
+#miku {
+  display: block;
+  margin: 20px auto;
+  max-height: 200px;
+}
+*/
